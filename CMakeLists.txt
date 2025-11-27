@@ -10,6 +10,12 @@ option(ENABLE_TEST "Enable tests" OFF)
 option(ENABLE_SPEC_API "Enable specifier API" ON)
 option(ENABLE_DOCUMENTATION "Enable documentation" ON)
 
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
+
+message("TEST: ${CMAKE_C_COMPILER_VERSION} ${CMAKE_C_COMPILER_FRONTEND_VARIANT} # ${CMAKE_C_STANDARD_LATEST}")
+
 add_subdirectory(lib)
 
 if (ENABLE_TEST)

@@ -34,7 +34,7 @@ extern "C"
         FMT_FLAG_PREPEND_ZERO, /**< Prepend zero flag */
         FMT_FLAG_THOUSANDS_GROUPING, /**< Enable thousands grouping */
         FMT_FLAG_ALTERNATE, /**< Enable alternate form */
-        FMT_FLAG_LAST = FMT_FLAG_ALTERNATE, /**< Last flag */
+        FMT_FLAG_LAST = FMT_FLAG_ALTERNATE /**< Last flag */
     } fmt_flag;
 
     /**

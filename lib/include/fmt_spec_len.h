@@ -13,12 +13,15 @@
  * @{
  */
 /** Specifier lengths */
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
 typedef enum fmt_spec_len
 {
 /* See possible values in fmt_vals.def */
 #define FMT_SPEC_LEN_VALUE(__name) FMT_SPEC_LEN_##__name,
 #include "fmt_vals.def"
 } fmt_spec_len;
+#pragma GCC diagnostic pop
 
 /**
  * @}

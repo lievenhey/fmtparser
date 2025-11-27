@@ -15,6 +15,10 @@ add_library(${PROJECT_NAME} ${FMT_PARSER_LIB_MODE}
             src/util.c
             src/infer.c)
 
+set_property(TARGET fmt_parser PROPERTY C_STANDARD 17)
+set_property(TARGET fmt_parser PROPERTY CXX_STANDARD 17)
+set_property(TARGET fmt_parser PROPERTY C_STANDARD_REQUIRED ON)
+
 if (ENABLE_SPEC_API)
     target_sources(${PROJECT_NAME} PUBLIC src/spec_api.c)
 endif ()
